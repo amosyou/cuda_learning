@@ -53,3 +53,22 @@ implemented CUDA kernel for converting images from rgb to grayscale
 ### readings
 
 pmpp ch3.1-3.2
+
+
+## day 3
+
+`image_blur.cu`, `matmul.cu`
+
+### summary
+
+implemented CUDA kernel for image blur and a basic matrix multiplication.
+
+### learnings
+
+- we verify that the row and col are both within the output range. otherwise, those threads should not execute.
+- row and col thread indices should have 1:1 mapping with the output indices
+- use multiple blocks to tile over the output
+
+### readings
+
+pmpp ch3.3-3.5
