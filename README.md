@@ -92,3 +92,20 @@ learned about GPU architecture, sychronization, and scheduling
 pmpp ch4.1-4.4.5
 
 
+## day 5
+
+### summary
+
+learned about control divergence, warp scheduling, occupancy
+
+### learnings
+
+- multiple passes for diff execution paths in control constructs (ie. if/else, for)
+- latency tolerance/hiding = filling latency time of ops from one thread with others
+- occupancy = ratio of # of warps assigned to SM / max number it supports
+
+### readings
+
+pmpp ch4.6-4.9
+
+
