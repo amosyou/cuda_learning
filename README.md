@@ -72,3 +72,23 @@ implemented CUDA kernel for image blur and a basic matrix multiplication.
 ### readings
 
 pmpp ch3.3-3.5
+
+
+## day 4
+
+### summary
+
+learned about GPU architecture, sychronization, and scheduling
+
+### learnings
+
+- barrier synchronization similar to a checkpoint
+- `__syncthreads() has to be executed by all threads in block. otherwise, deadlock/undefined behavior`
+- warp = unit of thread scheduling in SMs
+- blocks partitioned into warps for scheduling
+
+### readings
+
+pmpp ch4.1-4.4.5
+
+
