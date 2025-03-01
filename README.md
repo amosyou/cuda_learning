@@ -109,3 +109,20 @@ learned about control divergence, warp scheduling, occupancy
 pmpp ch4.6-4.9
 
 
+## day 6
+
+`matmul_tiled.cu`
+
+### summary
+
+implemented a CUDA kernel for tiled matmul. learned about registers, shared memory, tiling.
+
+### learnings
+
+- loads from global memory make kernels very slow
+- soln: use tiling to load small tiles into shared memory and run ops
+- calculate indices using row/col indices + tile width + phase count
+
+### readings
+
+pmpp ch5.1-5.4
