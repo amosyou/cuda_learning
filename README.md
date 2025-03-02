@@ -83,7 +83,7 @@ learned about GPU architecture, sychronization, and scheduling
 ### learnings
 
 - barrier synchronization similar to a checkpoint
-- `__syncthreads() has to be executed by all threads in block. otherwise, deadlock/undefined behavior`
+- `__syncthreads()` has to be executed by all threads in block. otherwise, deadlock/undefined behavior`
 - warp = unit of thread scheduling in SMs
 - blocks partitioned into warps for scheduling
 
@@ -126,3 +126,22 @@ implemented a CUDA kernel for tiled matmul. learned about registers, shared memo
 ### readings
 
 pmpp ch5.1-5.4
+
+
+## day 7
+
+`matmul_tiled_arb.cu`
+
+### summary
+
+added boundary checks for tiled matmul kernel where matrix width is not a multiple of tile width
+
+### learnings
+
+- boundary checks for when loading into shared memory, and writing to output
+- `extern` keyword in shared memory declaration for dynamic memory configuration
+- occupancy calculations with shared memory and thread counts
+
+### readings
+
+pmpp ch5.5-5.7
