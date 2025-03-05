@@ -145,3 +145,20 @@ added boundary checks for tiled matmul kernel where matrix width is not a multip
 ### readings
 
 pmpp ch5.5-5.7
+
+
+## day 8
+
+### summary
+
+learned about memory coalescing, bank conflicts
+
+### learnings
+
+- corner turning = turn 2nd matrix in matmul from row-major -> col-major for improved memory access
+- more banks reduces probability of bank conflict
+
+### readings
+
+pmpp ch6.1-6.2
+
