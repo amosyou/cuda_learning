@@ -162,3 +162,19 @@ learned about memory coalescing, bank conflicts
 
 pmpp ch6.1-6.2
 
+
+## day 9
+
+`matmul_coarse_arb.cu`
+
+### summary
+
+implemented thread coarsening for tiled matmul kernel on arbitrary matrix sizes
+
+### learnings
+
+- thread coarsening = rather than threads assigned to do the smallest possible unit of work (eg. one output element), assign each thread multiple units of work
+
+### readings
+
+pmpp ch6.3-6.4
